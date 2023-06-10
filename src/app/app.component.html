@@ -10,8 +10,8 @@
   </div>
   
   <p>Or enter the amount of beers you want to donate:</p>
-  <input type="number" id="amount-input" min="0" [(ngModel)]="beerCount" />
-  <p>Total amount to pay: <span id="total-amount">{{ getTotalAmount() }}</span> $</p>
+  <input type="number" id="amount-input" min="0" [(ngModel)]="totalAmount" />
+  <p>Total amount to pay: <span id="total-amount"> {{ getTotalAmount() }} </span> $</p>
   
   <button id="checkout-btn" (click)="checkoutButtonClicked()">Checkout</button>
   

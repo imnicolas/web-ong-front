@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 
+// TO DO -- import from Mercado Pago
+
 declare var MercadoPago: any;
 
 @Component({
@@ -49,7 +51,7 @@ export class AppComponent {
   }
 
   getTotalAmount(): number {
-    return this.beerCount * 50;
+    return this.totalAmount
   }
 
   // Mercado Pago
@@ -89,7 +91,7 @@ export class AppComponent {
       price: this.totalAmount.toString(),
     };
 
-    fetch("http://localhost:8080/create_preference", {
+    fetch("https://glitch.com/edit/#!/able-charming-garnet/create_preference", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
